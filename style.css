@@ -1,39 +1,65 @@
 * {
     box-sizing: border-box;
-
 }
 
 body {
     /*  viewport units: vh (viewport height (use a number for percentage of)), vw (viewport width), vmin (works on the smaller between vh and vw) */
     height: 100vh;
     margin: 0;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-color: rgb(5, 151, 255)
+}
+
+#gameMessage {
+    height: 10vh;
+    width: 90vmin;
+    text-align: center;
+    font-size: 2.5vh;
+    color: yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header {
-    font-size: 4vmin;
-    color: darkgrey;
+    font-size: 8vmin;
+    color: rgb(234, 234, 234);
     letter-spacing: 1vmin;
-    margin-bottom: -35px;
-    margin-top: 15px;
+    margin-bottom: -5vmin;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.timer {
-    margin-top: -10px;
+
+#fast {
+    font-style: italic;
+    font-weight: 700;
+    color: yellow;
+}
+
+#timer {
+    height: 10vh;
+    font-size: 4vmin;
+    color: rgb(234, 234, 234)
+}
+
+#countdown {
+    color: yellow;
+    font-size: 3vminpx;
 }
 
 h1 {
-    color: grey;
-    font-size: 3vmin;
-    display: inline-block;
+    color: rgb(234, 234, 234);
+    font-size: 6vmin;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+
 
 #markers {
     display: grid;
-    grid-template-columns: repeat(7, 10vmin);
+    grid-template-columns: repeat(7, 9vmin);
     gap: 1vmin;
     margin-top: 1.5vmin;
 }
@@ -44,6 +70,7 @@ h1 {
     border-style: solid;
     border-color: lightgray transparent transparent;
     transform: scale(.7);
+    cursor: pointer;
 }
 
 #markers > div:hover {
@@ -54,8 +81,8 @@ h1 {
 
 #board {
     display: grid;
-    grid-template-columns: repeat(7, 10vmin);
-    grid-template-rows: repeat(6, 10vmin);
+    grid-template-columns: repeat(7, 9vmin);
+    grid-template-rows: repeat(6, 9vmin);
     gap: 1vmin;
     margin-top: -4vmin;
 }
@@ -78,3 +105,15 @@ button:hover {
     color: white;
     background-color: darkgrey;
 }
+
+
+
+
+
+
+
+
+
+
+
+

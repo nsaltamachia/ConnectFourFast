@@ -1,8 +1,8 @@
 /*----- constants -----*/
 const COLORS = {
-    '1': 'purple',
-    '-1': 'orange',
-    '0': 'white'
+    '1': 'blue',
+    '-1': 'red',
+    '0': 'rgb(234, 234, 234)'
 };
 
 /*----- state variables -----*/
@@ -164,7 +164,9 @@ function renderControls() {
 function startTimer() {
   if (!gameStarted) {
     timerInterval = setInterval(updateTimer, 1000); // Update timer every second
-    gameStarted = true;
+        gameStarted = true;
+        document.getElementById('gameMessage').style.display = 'none'; // Hide game message
+        document.getElementById('timer').style.display = 'block'; // Show timer
   }
 }
 
